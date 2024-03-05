@@ -64,8 +64,9 @@ def msgGrabber(file):
             msgEmailGrabber(trucatedBody)
             msgURLGrabber(trucatedBody)
             messageFile.close()
-    except:
+    except Exception as e:
         print("Something Went Wrong In msgGrabber!")
+        print(f"Exception: {e}")
 
 def msgIPGrabber(bodyWell):
 
